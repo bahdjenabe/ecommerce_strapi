@@ -1,0 +1,158 @@
+@import "../../scss.config/mixins.scss";
+
+.cart {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 99;
+
+  .cart-opacity {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cart-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    animation: slideCartWindow 0.3s ease forwards; //pour faire un ani,ation de la fenêtre
+    @include md {
+      width: 340px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      .heading {
+        flex-grow: 1; // pour les separés
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .close-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+
+        svg {
+          font-size: 18px;
+        }
+
+        .text {
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .cart-contenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 100px;
+
+      svg {
+        font-size: 120px;
+        opacity: 0.5;
+      }
+
+      .return-btn {
+        outline: 0;
+        border: 0;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+
+        @include md {
+          flex-grow: unset;
+        }
+      }
+    }
+
+    .cart-footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+      .subTotal {
+        padding: 20px 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+          margin-bottom: 0;
+          font-size: 20px;
+          font-weight: 700;
+          text-transform: uppercase;
+
+          &.total {
+            color: #8e2de2;
+          }
+        }
+      }
+
+      .button {
+        padding: 20px 15px;
+
+        .verifier {
+          outline: 0;
+          border: 0;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          font-size: 13px;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          background-color: black;
+          cursor: pointer;
+          border-bottom: 1px solid black;
+
+          @include md {
+            flex-grow: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideCartWindow {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

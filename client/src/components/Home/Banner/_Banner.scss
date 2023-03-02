@@ -1,0 +1,118 @@
+@import "../../../scss.config/mixins.scss";
+
+.banner {
+  position: relative;
+  padding: 40px 0px;
+  //   background-image: linear-gradient(to right, #37e6f6, #081618);
+  background-color: rgb(247, 91, 85);
+  //   rgb(247, 89, 83);
+  @include md {
+    height: calc(100vh - 80px);
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    // flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+
+    @include md {
+      flex-direction: row;
+      max-width: 1200px;
+    }
+
+    .banniere-img {
+      position: relative;
+      z-index: 9;
+      width: 200px;
+      margin-bottom: 20px;
+
+      @include md {
+        width: 500px;
+        margin-right: 60px;
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+
+      @include xxl {
+        width: 600px;
+        margin-right: 0;
+        margin-top: 0;
+      }
+    }
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      color: black;
+      text-align: center;
+
+      @include md {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY((-50%));
+      }
+
+      @include xxl {
+        left: 0;
+      }
+
+      h1 {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 20px;
+
+        @include md {
+          font-size: 180px;
+        }
+      }
+
+      p {
+        max-width: 300px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        // margin: 0 auto;
+
+        @include md {
+          max-width: 500px;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .banniere {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .banniere {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 500;
+          //   width: fit-content;
+          border: 2px solid black;
+          padding: 10px 20px;
+          cursor: pointer;
+
+          &.v1 {
+            background-color: black;
+            color: white;
+          }
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+        .banniere2 {
+        }
+      }
+    }
+  }
+}

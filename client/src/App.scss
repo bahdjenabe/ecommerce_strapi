@@ -1,0 +1,31 @@
+@import "./components/Header/Header";
+@import "./components/Home/Home";
+@import "./components/Home/Banner/Banner";
+@import "./components/Footer/NewsLetter/NewsLetter";
+@import "./components/Footer/Footer";
+@import "./components/Home/Category/Category";
+@import "./components/Products/Products";
+@import "./components/Products/Product/Product";
+@import "./components/Category/Category";
+@import "./components/SingleProduct/SingleProduct";
+@import "./components/SingleProduct/RelatedProduct/RelatedProduct";
+@import "./components/Cart/Cart";
+@import "./components/Cart/CartItem/CartItem";
+@import "./components/Header/Search/Search";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //   -webkit-font-smoothing: antialiased;
+  //   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: aqua;
+  }
+}

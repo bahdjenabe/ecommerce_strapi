@@ -1,0 +1,36 @@
+@import "../../../scss.config/mixins.scss";
+
+.category {
+  margin: 25px 0;
+
+  @include md {
+    margin: 50px 0;
+  }
+  .category-content {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    .categories {
+      background-color: black;
+      width: calc(50% - 5px);
+      cursor: pointer;
+      overflow: hidden;
+
+      @include md {
+        width: calc(25% - 10px); //defini la taille et l'alignement des objets
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        transition: all ease 0.3s;
+
+        &:hover {
+          transform: scale(
+            1.2
+          ); //pour faire un zoom sur l'image une fois le curseur dessus
+        }
+      }
+    }
+  }
+}
