@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.169950a5.css",
+    "main.js": "/static/js/main.22df012c.js",
+    "static/js/787.9a378e0d.chunk.js": "/static/js/787.9a378e0d.chunk.js",
+    "static/media/new.jpeg": "/static/media/new.b475884a694134875961.jpeg",
+    "static/media/casque.webp": "/static/media/casque.e1a3630546c563f19be4.webp",
+    "static/media/b1.webp": "/static/media/b1.c4a49f3b0473db57f4a1.webp",
+    "static/media/payment.png": "/static/media/payment.c25c303da7570caf63c8.png",
+    "static/media/6.jpg": "/static/media/6.3464ed0b6a27f423869e.jpg",
+    "static/media/prod.webp": "/static/media/prod.92fcfe48e445d8291e42.webp",
+    "index.html": "/index.html",
+    "main.169950a5.css.map": "/static/css/main.169950a5.css.map",
+    "main.22df012c.js.map": "/static/js/main.22df012c.js.map",
+    "787.9a378e0d.chunk.js.map": "/static/js/787.9a378e0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169950a5.css",
+    "static/js/main.22df012c.js"
+  ]
+}
