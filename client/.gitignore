@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production and deploy on netlify
+# /build
 
 # misc
 .DS_Store
