@@ -16,3 +16,10 @@ export const fetchDataApi = async (url) => {
     return error;
   }
 };
+
+export const makePayementRequest = axios.create({
+  baseURL: process.env.REACT_APP_URL,
+  headers: {
+    Authorization: "bearer " + process.env.REACT_APP_STRIPE_API,
+  },
+});
